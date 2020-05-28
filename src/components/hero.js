@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import { Link, graphql, useStaticQuery } from 'gatsby';
+import { graphql, useStaticQuery } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
 
 const ImageBackground = styled(BackgroundImage)`
@@ -52,7 +52,7 @@ const Hero = () => {
   `);
 
   return (
-    <ImageBackground Tag="section" fluid={image.sharp.fluid}>
+    <ImageBackground Tag="section" fluid={image.sharp.fluid} fadeIn="soft">
       <TextBox>
         <h1>Gordy's Blog</h1>
         <p>Welcome to my blog</p>
