@@ -52,7 +52,7 @@ const Hero = () => {
   `);
 
   return (
-    <ImageBackground Tag="section" fluid={image.sharp.fluid}>
+    <ImageBackground Tag="section" fluid={image.sharp.fluid} fadeIn="soft">
       <TextBox>
         <h1>Gordy's Blog</h1>
         <p>Welcome to my blog</p>
